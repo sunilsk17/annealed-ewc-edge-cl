@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 venv/
 
+# Data (CIFAR-10 dataset - too large, can be downloaded)
+data/
+
 # IDE
 .DS_Store
 .vscode/
