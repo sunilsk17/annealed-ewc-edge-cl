@@ -1,0 +1,74 @@
+{
+  "0": {
+    "accuracies": [
+      0.1734,
+      0.1754,
+      0.1818,
+      0.173,
+      0.5824
+    ],
+    "final_task_accuracy": 0.5824,
+    "average_forgetting": 0.8241,
+    "early_task_avg": 0.1759
+  },
+  "200": {
+    "accuracies": [
+      0.203,
+      0.1716,
+      0.1892,
+      0.172,
+      0.5164
+    ],
+    "final_task_accuracy": 0.5164,
+    "average_forgetting": 0.8160499999999999,
+    "early_task_avg": 0.18395
+  },
+  "500": {
+    "accuracies": [
+      0.1376,
+      0.1388,
+      0.1536,
+      0.1338,
+      0.492
+    ],
+    "final_task_accuracy": 0.492,
+    "average_forgetting": 0.85905,
+    "early_task_avg": 0.14095
+  },
+  "1000": {
+    "accuracies": [
+      0.1386,
+      0.1372,
+      0.1484,
+      0.126,
+      0.4752
+    ],
+    "final_task_accuracy": 0.4752,
+    "average_forgetting": 0.8624499999999999,
+    "early_task_avg": 0.13755
+  },
+  "2000": {
+    "accuracies": [
+      0.1612,
+      0.156,
+      0.1742,
+      0.15,
+      0.4638
+    ],
+    "final_task_accuracy": 0.4638,
+    "average_forgetting": 0.83965,
+    "early_task_avg": 0.16035
+  },
+  "5000": {
+    "accuracies": [
+      0.1222,
+      0.1348,
+      0.1334,
+      0.1244,
+      0.443
+    ],
+    "final_task_accuracy": 0.443,
+    "average_forgetting": 0.8713,
+    "early_task_avg": 0.1287
+  }
+}
