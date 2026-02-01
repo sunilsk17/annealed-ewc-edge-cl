@@ -1,0 +1,731 @@
+==========================================
+ResNet-18 CIFAR-10 EXPERIMENTS
+Running: λ=0, 200, 500, 1000, 2000, 5000 + Annealed
+Start time: Fri Jan 30 15:27:12 IST 2026
+Estimated: 3-4 hours
+==========================================
+
+[1/7] Training λ=0 (Baseline)...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Training ResNet-18 on CIFAR-10: 5 drift envs, 10 epochs/env, λ=0.0
+
+============================================================
+Training on Environment 0
+============================================================
+Epoch 1/10 - Loss: 1.8002 - Acc: 0.3426
+Epoch 2/10 - Loss: 1.4329 - Acc: 0.4628
+Epoch 3/10 - Loss: 1.2746 - Acc: 0.5340
+Epoch 4/10 - Loss: 1.1291 - Acc: 0.5874
+Epoch 5/10 - Loss: 0.9672 - Acc: 0.6608
+Epoch 6/10 - Loss: 0.8155 - Acc: 0.7044
+Epoch 7/10 - Loss: 0.5614 - Acc: 0.8026
+Epoch 8/10 - Loss: 0.4178 - Acc: 0.8562
+Epoch 9/10 - Loss: 0.3608 - Acc: 0.8772
+Epoch 10/10 - Loss: 0.2570 - Acc: 0.9170
+Saved: results_resnet_cifar10/lambda_sweep/lambda_0/model_task0.pt
+
+============================================================
+Training on Environment 1
+============================================================
+Epoch 1/10 - Loss: 1.4413 - Acc: 0.5460
+Epoch 2/10 - Loss: 0.8661 - Acc: 0.6896
+Epoch 3/10 - Loss: 0.6412 - Acc: 0.7860
+Epoch 4/10 - Loss: 0.4862 - Acc: 0.8344
+Epoch 5/10 - Loss: 0.3668 - Acc: 0.8812
+Epoch 6/10 - Loss: 0.3642 - Acc: 0.8780
+Epoch 7/10 - Loss: 0.2757 - Acc: 0.9076
+Epoch 8/10 - Loss: 0.1028 - Acc: 0.9730
+Epoch 9/10 - Loss: 0.0335 - Acc: 0.9960
+Epoch 10/10 - Loss: 0.0672 - Acc: 0.9810
+Saved: results_resnet_cifar10/lambda_sweep/lambda_0/model_task1.pt
+
+============================================================
+Training on Environment 2
+============================================================
+Epoch 1/10 - Loss: 1.3324 - Acc: 0.5968
+Epoch 2/10 - Loss: 0.7387 - Acc: 0.7354
+Epoch 3/10 - Loss: 0.4314 - Acc: 0.8514
+Epoch 4/10 - Loss: 0.2057 - Acc: 0.9382
+Epoch 5/10 - Loss: 0.0957 - Acc: 0.9786
+Epoch 6/10 - Loss: 0.3104 - Acc: 0.8924
+Epoch 7/10 - Loss: 0.1878 - Acc: 0.9400
+Epoch 8/10 - Loss: 0.2078 - Acc: 0.9302
+Epoch 9/10 - Loss: 0.0636 - Acc: 0.9826
+Epoch 10/10 - Loss: 0.1183 - Acc: 0.9678
+Saved: results_resnet_cifar10/lambda_sweep/lambda_0/model_task2.pt
+
+============================================================
+Training on Environment 3
+============================================================
+Epoch 1/10 - Loss: 1.3614 - Acc: 0.5956
+Epoch 2/10 - Loss: 0.7769 - Acc: 0.7328
+Epoch 3/10 - Loss: 0.6041 - Acc: 0.8064
+Epoch 4/10 - Loss: 0.5353 - Acc: 0.8172
+Epoch 5/10 - Loss: 0.3635 - Acc: 0.8860
+Epoch 6/10 - Loss: 0.4362 - Acc: 0.8582
+Epoch 7/10 - Loss: 0.3086 - Acc: 0.8966
+Epoch 8/10 - Loss: 0.1431 - Acc: 0.9546
+Epoch 9/10 - Loss: 0.1525 - Acc: 0.9552
+Epoch 10/10 - Loss: 0.0870 - Acc: 0.9738
+Saved: results_resnet_cifar10/lambda_sweep/lambda_0/model_task3.pt
+
+============================================================
+Training on Environment 4
+============================================================
+Epoch 1/10 - Loss: 1.3387 - Acc: 0.5976
+Epoch 2/10 - Loss: 0.7051 - Acc: 0.7656
+Epoch 3/10 - Loss: 0.4512 - Acc: 0.8530
+Epoch 4/10 - Loss: 0.3815 - Acc: 0.8748
+Epoch 5/10 - Loss: 0.2725 - Acc: 0.9118
+Epoch 6/10 - Loss: 0.1327 - Acc: 0.9664
+Epoch 7/10 - Loss: 0.1773 - Acc: 0.9454
+Epoch 8/10 - Loss: 0.0880 - Acc: 0.9800
+Epoch 9/10 - Loss: 0.2440 - Acc: 0.9170
+Epoch 10/10 - Loss: 0.0665 - Acc: 0.9838
+Saved: results_resnet_cifar10/lambda_sweep/lambda_0/model_task4.pt
+
+============================================================
+Training Complete!
+============================================================
+[1/7] Evaluating λ=0...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Evaluating on Environment 0...
+Environment 0 Accuracy: 0.3737
+Evaluating on Environment 1...
+Environment 1 Accuracy: 0.3737
+Evaluating on Environment 2...
+Environment 2 Accuracy: 0.3737
+Evaluating on Environment 3...
+Environment 3 Accuracy: 0.3737
+Evaluating on Environment 4...
+Environment 4 Accuracy: 0.3737
+
+============================================================
+Final Accuracies: ['0.3737', '0.3737', '0.3737', '0.3737', '0.3737']
+Average Accuracy: 0.3737
+Final Environment: 0.3737
+Early Environments Avg: 0.3737
+============================================================
+Results saved to results_resnet_cifar10/lambda_sweep/lambda_0_results.json
+
+[2/7] Training λ=200...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Training ResNet-18 on CIFAR-10: 5 drift envs, 10 epochs/env, λ=200.0
+
+============================================================
+Training on Environment 0
+============================================================
+Epoch 1/10 - Loss: 1.7814 - Acc: 0.3362
+Epoch 2/10 - Loss: 1.4647 - Acc: 0.4590
+Epoch 3/10 - Loss: 1.2715 - Acc: 0.5356
+Epoch 4/10 - Loss: 1.1221 - Acc: 0.5890
+Epoch 5/10 - Loss: 0.8941 - Acc: 0.6800
+Epoch 6/10 - Loss: 0.7079 - Acc: 0.7486
+Epoch 7/10 - Loss: 0.6087 - Acc: 0.7848
+Epoch 8/10 - Loss: 0.4697 - Acc: 0.8412
+Epoch 9/10 - Loss: 0.3997 - Acc: 0.8660
+Epoch 10/10 - Loss: 0.3720 - Acc: 0.8670
+Saved: results_resnet_cifar10/lambda_sweep/lambda_200/model_task0.pt
+Computing Fisher for Environment 0...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 1
+============================================================
+Epoch 1/10 - Loss: 1.2716 - Acc: 0.5964
+Epoch 2/10 - Loss: 0.8589 - Acc: 0.7394
+Epoch 3/10 - Loss: 0.6956 - Acc: 0.7932
+Epoch 4/10 - Loss: 0.4411 - Acc: 0.8916
+Epoch 5/10 - Loss: 0.3032 - Acc: 0.9440
+Epoch 6/10 - Loss: 0.1932 - Acc: 0.9852
+Epoch 7/10 - Loss: 0.2486 - Acc: 0.9636
+Epoch 8/10 - Loss: 0.1731 - Acc: 0.9910
+Epoch 9/10 - Loss: 0.1564 - Acc: 0.9966
+Epoch 10/10 - Loss: 0.3729 - Acc: 0.9272
+Saved: results_resnet_cifar10/lambda_sweep/lambda_200/model_task1.pt
+Computing Fisher for Environment 1...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 2
+============================================================
+Epoch 1/10 - Loss: 1.7503 - Acc: 0.5682
+Epoch 2/10 - Loss: 1.1853 - Acc: 0.7376
+Epoch 3/10 - Loss: 0.9462 - Acc: 0.7968
+Epoch 4/10 - Loss: 0.7437 - Acc: 0.8888
+Epoch 5/10 - Loss: 0.9259 - Acc: 0.8490
+Epoch 6/10 - Loss: 0.8386 - Acc: 0.9034
+Epoch 7/10 - Loss: 0.8705 - Acc: 0.8982
+Epoch 8/10 - Loss: 0.6023 - Acc: 0.9756
+Epoch 9/10 - Loss: 0.5878 - Acc: 0.9662
+Epoch 10/10 - Loss: 0.5133 - Acc: 0.9838
+Saved: results_resnet_cifar10/lambda_sweep/lambda_200/model_task2.pt
+Computing Fisher for Environment 2...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 3
+============================================================
+Epoch 1/10 - Loss: 2.0398 - Acc: 0.5724
+Epoch 2/10 - Loss: 1.4243 - Acc: 0.7136
+Epoch 3/10 - Loss: 1.1538 - Acc: 0.7928
+Epoch 4/10 - Loss: 1.3741 - Acc: 0.7394
+Epoch 5/10 - Loss: 1.1113 - Acc: 0.8360
+Epoch 6/10 - Loss: 0.8854 - Acc: 0.9094
+Epoch 7/10 - Loss: 1.1811 - Acc: 0.8318
+Epoch 8/10 - Loss: 1.1115 - Acc: 0.8710
+Epoch 9/10 - Loss: 0.8950 - Acc: 0.9276
+Epoch 10/10 - Loss: 0.7175 - Acc: 0.9566
+Saved: results_resnet_cifar10/lambda_sweep/lambda_200/model_task3.pt
+Computing Fisher for Environment 3...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 4
+============================================================
+Epoch 1/10 - Loss: 2.0372 - Acc: 0.5802
+Epoch 2/10 - Loss: 1.4444 - Acc: 0.7462
+Epoch 3/10 - Loss: 1.1874 - Acc: 0.8120
+Epoch 4/10 - Loss: 1.0291 - Acc: 0.8764
+Epoch 5/10 - Loss: 1.1952 - Acc: 0.8432
+Epoch 6/10 - Loss: 0.9483 - Acc: 0.9352
+Epoch 7/10 - Loss: 1.1554 - Acc: 0.8796
+Epoch 8/10 - Loss: 1.0012 - Acc: 0.9318
+Epoch 9/10 - Loss: 0.9380 - Acc: 0.9424
+Epoch 10/10 - Loss: 0.8298 - Acc: 0.9614
+Saved: results_resnet_cifar10/lambda_sweep/lambda_200/model_task4.pt
+Computing Fisher for Environment 4...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training Complete!
+============================================================
+[2/7] Evaluating λ=200...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Evaluating on Environment 0...
+Environment 0 Accuracy: 0.4832
+Evaluating on Environment 1...
+Environment 1 Accuracy: 0.4832
+Evaluating on Environment 2...
+Environment 2 Accuracy: 0.4832
+Evaluating on Environment 3...
+Environment 3 Accuracy: 0.4832
+Evaluating on Environment 4...
+Environment 4 Accuracy: 0.4832
+
+============================================================
+Final Accuracies: ['0.4832', '0.4832', '0.4832', '0.4832', '0.4832']
+Average Accuracy: 0.4832
+Final Environment: 0.4832
+Early Environments Avg: 0.4832
+============================================================
+Results saved to results_resnet_cifar10/lambda_sweep/lambda_200_results.json
+
+[3/7] Training λ=500...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Training ResNet-18 on CIFAR-10: 5 drift envs, 10 epochs/env, λ=500.0
+
+============================================================
+Training on Environment 0
+============================================================
+Epoch 1/10 - Loss: 1.8397 - Acc: 0.3256
+Epoch 2/10 - Loss: 1.4325 - Acc: 0.4740
+Epoch 3/10 - Loss: 1.2264 - Acc: 0.5498
+Epoch 4/10 - Loss: 1.0683 - Acc: 0.6094
+Epoch 5/10 - Loss: 0.9628 - Acc: 0.6678
+Epoch 6/10 - Loss: 0.7726 - Acc: 0.7332
+Epoch 7/10 - Loss: 0.8049 - Acc: 0.7174
+Epoch 8/10 - Loss: 0.4353 - Acc: 0.8516
+Epoch 9/10 - Loss: 0.2077 - Acc: 0.9332
+Epoch 10/10 - Loss: 0.4619 - Acc: 0.8518
+Saved: results_resnet_cifar10/lambda_sweep/lambda_500/model_task0.pt
+Computing Fisher for Environment 0...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 1
+============================================================
+Epoch 1/10 - Loss: 1.7657 - Acc: 0.5618
+Epoch 2/10 - Loss: 1.1851 - Acc: 0.7090
+Epoch 3/10 - Loss: 1.0134 - Acc: 0.7774
+Epoch 4/10 - Loss: 1.0024 - Acc: 0.8100
+Epoch 5/10 - Loss: 0.9660 - Acc: 0.8476
+Epoch 6/10 - Loss: 1.2978 - Acc: 0.8136
+Epoch 7/10 - Loss: 1.0975 - Acc: 0.8830
+Epoch 8/10 - Loss: 0.9013 - Acc: 0.9176
+Epoch 9/10 - Loss: 0.5553 - Acc: 0.9804
+Epoch 10/10 - Loss: 0.7161 - Acc: 0.9314
+Saved: results_resnet_cifar10/lambda_sweep/lambda_500/model_task1.pt
+Computing Fisher for Environment 1...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 2
+============================================================
+Epoch 1/10 - Loss: 2.2563 - Acc: 0.5940
+Epoch 2/10 - Loss: 1.8276 - Acc: 0.6810
+Epoch 3/10 - Loss: 1.4706 - Acc: 0.7570
+Epoch 4/10 - Loss: 1.3602 - Acc: 0.8216
+Epoch 5/10 - Loss: 1.6295 - Acc: 0.8086
+Epoch 6/10 - Loss: 1.6595 - Acc: 0.8308
+Epoch 7/10 - Loss: 1.4854 - Acc: 0.8708
+Epoch 8/10 - Loss: 2.0203 - Acc: 0.8038
+Epoch 9/10 - Loss: 1.6616 - Acc: 0.8708
+Epoch 10/10 - Loss: 1.3832 - Acc: 0.9056
+Saved: results_resnet_cifar10/lambda_sweep/lambda_500/model_task2.pt
+Computing Fisher for Environment 2...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 3
+============================================================
+Epoch 1/10 - Loss: 3.3796 - Acc: 0.5514
+Epoch 2/10 - Loss: 2.3387 - Acc: 0.6484
+Epoch 3/10 - Loss: 2.1961 - Acc: 0.6844
+Epoch 4/10 - Loss: 2.3866 - Acc: 0.6796
+Epoch 5/10 - Loss: 2.2736 - Acc: 0.7190
+Epoch 6/10 - Loss: 2.5211 - Acc: 0.7080
+Epoch 7/10 - Loss: 2.3452 - Acc: 0.7208
+Epoch 8/10 - Loss: 2.5440 - Acc: 0.7234
+Epoch 9/10 - Loss: 2.1936 - Acc: 0.7572
+Epoch 10/10 - Loss: 2.7455 - Acc: 0.7126
+Saved: results_resnet_cifar10/lambda_sweep/lambda_500/model_task3.pt
+Computing Fisher for Environment 3...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 4
+============================================================
+Epoch 1/10 - Loss: 3.1500 - Acc: 0.5784
+Epoch 2/10 - Loss: 2.4796 - Acc: 0.6750
+Epoch 3/10 - Loss: 2.6604 - Acc: 0.6840
+Epoch 4/10 - Loss: 2.4038 - Acc: 0.7258
+Epoch 5/10 - Loss: 2.5613 - Acc: 0.7394
+Epoch 6/10 - Loss: 2.5579 - Acc: 0.7696
+Epoch 7/10 - Loss: 2.5775 - Acc: 0.7724
+Epoch 8/10 - Loss: 2.8480 - Acc: 0.7518
+Epoch 9/10 - Loss: 2.4817 - Acc: 0.8198
+Epoch 10/10 - Loss: 2.8647 - Acc: 0.7648
+Saved: results_resnet_cifar10/lambda_sweep/lambda_500/model_task4.pt
+Computing Fisher for Environment 4...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training Complete!
+============================================================
+[3/7] Evaluating λ=500...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Evaluating on Environment 0...
+Environment 0 Accuracy: 0.5162
+Evaluating on Environment 1...
+Environment 1 Accuracy: 0.5162
+Evaluating on Environment 2...
+Environment 2 Accuracy: 0.5162
+Evaluating on Environment 3...
+Environment 3 Accuracy: 0.5162
+Evaluating on Environment 4...
+Environment 4 Accuracy: 0.5162
+
+============================================================
+Final Accuracies: ['0.5162', '0.5162', '0.5162', '0.5162', '0.5162']
+Average Accuracy: 0.5162
+Final Environment: 0.5162
+Early Environments Avg: 0.5162
+============================================================
+Results saved to results_resnet_cifar10/lambda_sweep/lambda_500_results.json
+
+[4/7] Training λ=1000...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Training ResNet-18 on CIFAR-10: 5 drift envs, 10 epochs/env, λ=1000.0
+
+============================================================
+Training on Environment 0
+============================================================
+Epoch 1/10 - Loss: 1.8411 - Acc: 0.3232
+Epoch 2/10 - Loss: 1.5246 - Acc: 0.4446
+Epoch 3/10 - Loss: 1.3126 - Acc: 0.5220
+Epoch 4/10 - Loss: 1.1380 - Acc: 0.5918
+Epoch 5/10 - Loss: 1.0831 - Acc: 0.6140
+Epoch 6/10 - Loss: 0.8976 - Acc: 0.6830
+Epoch 7/10 - Loss: 0.6787 - Acc: 0.7628
+Epoch 8/10 - Loss: 0.5360 - Acc: 0.8156
+Epoch 9/10 - Loss: 0.3997 - Acc: 0.8648
+Epoch 10/10 - Loss: 0.4283 - Acc: 0.8546
+Saved: results_resnet_cifar10/lambda_sweep/lambda_1000/model_task0.pt
+Computing Fisher for Environment 0...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 1
+============================================================
+Epoch 1/10 - Loss: 1.6501 - Acc: 0.5926
+Epoch 2/10 - Loss: 1.1579 - Acc: 0.7226
+Epoch 3/10 - Loss: 1.1130 - Acc: 0.7682
+Epoch 4/10 - Loss: 1.1199 - Acc: 0.8258
+Epoch 5/10 - Loss: 1.3930 - Acc: 0.7954
+Epoch 6/10 - Loss: 1.0442 - Acc: 0.8734
+Epoch 7/10 - Loss: 0.9149 - Acc: 0.9086
+Epoch 8/10 - Loss: 1.4345 - Acc: 0.8524
+Epoch 9/10 - Loss: 1.5618 - Acc: 0.8488
+Epoch 10/10 - Loss: 1.2298 - Acc: 0.9036
+Saved: results_resnet_cifar10/lambda_sweep/lambda_1000/model_task1.pt
+Computing Fisher for Environment 1...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 2
+============================================================
+Epoch 1/10 - Loss: 2.8564 - Acc: 0.6062
+Epoch 2/10 - Loss: 1.8782 - Acc: 0.7040
+Epoch 3/10 - Loss: 1.8972 - Acc: 0.7228
+Epoch 4/10 - Loss: 2.0248 - Acc: 0.7362
+Epoch 5/10 - Loss: 1.8854 - Acc: 0.7598
+Epoch 6/10 - Loss: 2.1249 - Acc: 0.7514
+Epoch 7/10 - Loss: 1.7350 - Acc: 0.8032
+Epoch 8/10 - Loss: 2.0272 - Acc: 0.7874
+Epoch 9/10 - Loss: 2.1018 - Acc: 0.8016
+Epoch 10/10 - Loss: 2.1499 - Acc: 0.8050
+Saved: results_resnet_cifar10/lambda_sweep/lambda_1000/model_task2.pt
+Computing Fisher for Environment 2...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 3
+============================================================
+Epoch 1/10 - Loss: 3.0498 - Acc: 0.5790
+Epoch 2/10 - Loss: 2.3410 - Acc: 0.6396
+Epoch 3/10 - Loss: 2.4310 - Acc: 0.6344
+Epoch 4/10 - Loss: 2.4786 - Acc: 0.6442
+Epoch 5/10 - Loss: 2.3327 - Acc: 0.6730
+Epoch 6/10 - Loss: 2.4135 - Acc: 0.6754
+Epoch 7/10 - Loss: 2.3980 - Acc: 0.6802
+Epoch 8/10 - Loss: 2.4239 - Acc: 0.6848
+Epoch 9/10 - Loss: 2.3526 - Acc: 0.7004
+Epoch 10/10 - Loss: 2.5732 - Acc: 0.6960
+Saved: results_resnet_cifar10/lambda_sweep/lambda_1000/model_task3.pt
+Computing Fisher for Environment 3...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 4
+============================================================
+Epoch 1/10 - Loss: 2.9503 - Acc: 0.5852
+Epoch 2/10 - Loss: 2.5174 - Acc: 0.6518
+Epoch 3/10 - Loss: 2.7148 - Acc: 0.6538
+Epoch 4/10 - Loss: 2.7598 - Acc: 0.6502
+Epoch 5/10 - Loss: 2.8418 - Acc: 0.6550
+Epoch 6/10 - Loss: 2.5749 - Acc: 0.6906
+Epoch 7/10 - Loss: 2.7078 - Acc: 0.6870
+Epoch 8/10 - Loss: 3.0075 - Acc: 0.6578
+Epoch 9/10 - Loss: 3.0130 - Acc: 0.6734
+Epoch 10/10 - Loss: 2.9264 - Acc: 0.6940
+Saved: results_resnet_cifar10/lambda_sweep/lambda_1000/model_task4.pt
+Computing Fisher for Environment 4...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training Complete!
+============================================================
+[4/7] Evaluating λ=1000...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Evaluating on Environment 0...
+Environment 0 Accuracy: 0.3679
+Evaluating on Environment 1...
+Environment 1 Accuracy: 0.3679
+Evaluating on Environment 2...
+Environment 2 Accuracy: 0.3679
+Evaluating on Environment 3...
+Environment 3 Accuracy: 0.3679
+Evaluating on Environment 4...
+Environment 4 Accuracy: 0.3679
+
+============================================================
+Final Accuracies: ['0.3679', '0.3679', '0.3679', '0.3679', '0.3679']
+Average Accuracy: 0.3679
+Final Environment: 0.3679
+Early Environments Avg: 0.3679
+============================================================
+Results saved to results_resnet_cifar10/lambda_sweep/lambda_1000_results.json
+
+[5/7] Training λ=2000...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Training ResNet-18 on CIFAR-10: 5 drift envs, 10 epochs/env, λ=2000.0
+
+============================================================
+Training on Environment 0
+============================================================
+Epoch 1/10 - Loss: 1.7918 - Acc: 0.3438
+Epoch 2/10 - Loss: 1.4638 - Acc: 0.4730
+Epoch 3/10 - Loss: 1.2698 - Acc: 0.5268
+Epoch 4/10 - Loss: 1.1063 - Acc: 0.6024
+Epoch 5/10 - Loss: 0.9012 - Acc: 0.6844
+Epoch 6/10 - Loss: 0.7322 - Acc: 0.7364
+Epoch 7/10 - Loss: 0.5410 - Acc: 0.8126
+Epoch 8/10 - Loss: 0.6198 - Acc: 0.7926
+Epoch 9/10 - Loss: 0.4126 - Acc: 0.8606
+Epoch 10/10 - Loss: 0.2756 - Acc: 0.9270
+Saved: results_resnet_cifar10/lambda_sweep/lambda_2000/model_task0.pt
+Computing Fisher for Environment 0...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 1
+============================================================
+Epoch 1/10 - Loss: 1.7819 - Acc: 0.5620
+Epoch 2/10 - Loss: 1.2156 - Acc: 0.6976
+Epoch 3/10 - Loss: 0.9525 - Acc: 0.7746
+Epoch 4/10 - Loss: 0.8596 - Acc: 0.8302
+Epoch 5/10 - Loss: 0.9413 - Acc: 0.8434
+Epoch 6/10 - Loss: 0.9009 - Acc: 0.8868
+Epoch 7/10 - Loss: 0.6518 - Acc: 0.9482
+Epoch 8/10 - Loss: 0.6377 - Acc: 0.9512
+Epoch 9/10 - Loss: 1.4818 - Acc: 0.7914
+Epoch 10/10 - Loss: 1.0173 - Acc: 0.9206
+Saved: results_resnet_cifar10/lambda_sweep/lambda_2000/model_task1.pt
+Computing Fisher for Environment 1...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 2
+============================================================
+Epoch 1/10 - Loss: 2.1335 - Acc: 0.6196
+Epoch 2/10 - Loss: 1.5300 - Acc: 0.7498
+Epoch 3/10 - Loss: 1.5316 - Acc: 0.7806
+Epoch 4/10 - Loss: 1.3859 - Acc: 0.8376
+Epoch 5/10 - Loss: 1.7052 - Acc: 0.8088
+Epoch 6/10 - Loss: 1.4298 - Acc: 0.8726
+Epoch 7/10 - Loss: 1.4562 - Acc: 0.8810
+Epoch 8/10 - Loss: 1.5030 - Acc: 0.8736
+Epoch 9/10 - Loss: 1.3043 - Acc: 0.9218
+Epoch 10/10 - Loss: 2.1947 - Acc: 0.7952
+Saved: results_resnet_cifar10/lambda_sweep/lambda_2000/model_task2.pt
+Computing Fisher for Environment 2...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 3
+============================================================
+Epoch 1/10 - Loss: 3.4494 - Acc: 0.5666
+Epoch 2/10 - Loss: 2.8006 - Acc: 0.6356
+Epoch 3/10 - Loss: 2.7835 - Acc: 0.6578
+Epoch 4/10 - Loss: 2.8398 - Acc: 0.6698
+Epoch 5/10 - Loss: 2.8128 - Acc: 0.6892
+Epoch 6/10 - Loss: 2.7724 - Acc: 0.6984
+Epoch 7/10 - Loss: 2.6055 - Acc: 0.7322
+Epoch 8/10 - Loss: 2.6481 - Acc: 0.7314
+Epoch 9/10 - Loss: 2.7615 - Acc: 0.7214
+Epoch 10/10 - Loss: 2.4877 - Acc: 0.7630
+Saved: results_resnet_cifar10/lambda_sweep/lambda_2000/model_task3.pt
+Computing Fisher for Environment 3...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 4
+============================================================
+Epoch 1/10 - Loss: 3.5534 - Acc: 0.5920
+Epoch 2/10 - Loss: 3.1016 - Acc: 0.6498
+Epoch 3/10 - Loss: 3.1516 - Acc: 0.6672
+Epoch 4/10 - Loss: 2.9132 - Acc: 0.7004
+Epoch 5/10 - Loss: 2.9788 - Acc: 0.7162
+Epoch 6/10 - Loss: 3.1424 - Acc: 0.7174
+Epoch 7/10 - Loss: 3.4586 - Acc: 0.7000
+Epoch 8/10 - Loss: 3.2294 - Acc: 0.7302
+Epoch 9/10 - Loss: 3.1163 - Acc: 0.7530
+Epoch 10/10 - Loss: 3.1139 - Acc: 0.7544
+Saved: results_resnet_cifar10/lambda_sweep/lambda_2000/model_task4.pt
+Computing Fisher for Environment 4...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training Complete!
+============================================================
+[5/7] Evaluating λ=2000...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Evaluating on Environment 0...
+Environment 0 Accuracy: 0.3735
+Evaluating on Environment 1...
+Environment 1 Accuracy: 0.3735
+Evaluating on Environment 2...
+Environment 2 Accuracy: 0.3735
+Evaluating on Environment 3...
+Environment 3 Accuracy: 0.3735
+Evaluating on Environment 4...
+Environment 4 Accuracy: 0.3735
+
+============================================================
+Final Accuracies: ['0.3735', '0.3735', '0.3735', '0.3735', '0.3735']
+Average Accuracy: 0.3735
+Final Environment: 0.3735
+Early Environments Avg: 0.3735
+============================================================
+Results saved to results_resnet_cifar10/lambda_sweep/lambda_2000_results.json
+
+[6/7] Training λ=5000...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Training ResNet-18 on CIFAR-10: 5 drift envs, 10 epochs/env, λ=5000.0
+
+============================================================
+Training on Environment 0
+============================================================
+Epoch 1/10 - Loss: 1.8124 - Acc: 0.3474
+Epoch 2/10 - Loss: 1.4557 - Acc: 0.4624
+Epoch 3/10 - Loss: 1.2199 - Acc: 0.5490
+Epoch 4/10 - Loss: 1.0622 - Acc: 0.6212
+Epoch 5/10 - Loss: 0.9318 - Acc: 0.6624
+Epoch 6/10 - Loss: 0.7211 - Acc: 0.7482
+Epoch 7/10 - Loss: 0.6779 - Acc: 0.7638
+Epoch 8/10 - Loss: 0.3936 - Acc: 0.8634
+Epoch 9/10 - Loss: 0.2338 - Acc: 0.9284
+Epoch 10/10 - Loss: 0.3789 - Acc: 0.8768
+Saved: results_resnet_cifar10/lambda_sweep/lambda_5000/model_task0.pt
+Computing Fisher for Environment 0...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 1
+============================================================
+Epoch 1/10 - Loss: 1.8786 - Acc: 0.5886
+Epoch 2/10 - Loss: 1.3372 - Acc: 0.6892
+Epoch 3/10 - Loss: 1.4574 - Acc: 0.7190
+Epoch 4/10 - Loss: 1.4718 - Acc: 0.7410
+Epoch 5/10 - Loss: 1.1846 - Acc: 0.8054
+Epoch 6/10 - Loss: 1.3985 - Acc: 0.8182
+Epoch 7/10 - Loss: 1.7218 - Acc: 0.7986
+Epoch 8/10 - Loss: 1.9731 - Acc: 0.7874
+Epoch 9/10 - Loss: 1.1883 - Acc: 0.8814
+Epoch 10/10 - Loss: 1.2240 - Acc: 0.8844
+Saved: results_resnet_cifar10/lambda_sweep/lambda_5000/model_task1.pt
+Computing Fisher for Environment 1...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 2
+============================================================
+Epoch 1/10 - Loss: 3.1338 - Acc: 0.6310
+Epoch 2/10 - Loss: 2.5545 - Acc: 0.6778
+Epoch 3/10 - Loss: 2.2862 - Acc: 0.6888
+Epoch 4/10 - Loss: 2.4643 - Acc: 0.7016
+Epoch 5/10 - Loss: 2.6987 - Acc: 0.6900
+Epoch 6/10 - Loss: 2.7406 - Acc: 0.6862
+Epoch 7/10 - Loss: 2.3345 - Acc: 0.7130
+Epoch 8/10 - Loss: 2.6643 - Acc: 0.7000
+Epoch 9/10 - Loss: 2.3691 - Acc: 0.7340
+Epoch 10/10 - Loss: 2.2831 - Acc: 0.7540
+Saved: results_resnet_cifar10/lambda_sweep/lambda_5000/model_task2.pt
+Computing Fisher for Environment 2...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 3
+============================================================
+Epoch 1/10 - Loss: 3.6044 - Acc: 0.5656
+Epoch 2/10 - Loss: 3.0056 - Acc: 0.5946
+Epoch 3/10 - Loss: 2.9628 - Acc: 0.5992
+Epoch 4/10 - Loss: 3.1133 - Acc: 0.5918
+Epoch 5/10 - Loss: 3.1408 - Acc: 0.6116
+Epoch 6/10 - Loss: 3.1690 - Acc: 0.5944
+Epoch 7/10 - Loss: 2.9461 - Acc: 0.6138
+Epoch 8/10 - Loss: 3.0755 - Acc: 0.6088
+Epoch 9/10 - Loss: 3.0531 - Acc: 0.5950
+Epoch 10/10 - Loss: 3.0091 - Acc: 0.5960
+Saved: results_resnet_cifar10/lambda_sweep/lambda_5000/model_task3.pt
+Computing Fisher for Environment 3...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training on Environment 4
+============================================================
+Epoch 1/10 - Loss: 3.3523 - Acc: 0.5808
+Epoch 2/10 - Loss: 3.1893 - Acc: 0.6020
+Epoch 3/10 - Loss: 3.3419 - Acc: 0.5894
+Epoch 4/10 - Loss: 3.3995 - Acc: 0.6092
+Epoch 5/10 - Loss: 3.5966 - Acc: 0.5984
+Epoch 6/10 - Loss: 3.1476 - Acc: 0.6130
+Epoch 7/10 - Loss: 3.2378 - Acc: 0.6056
+Epoch 8/10 - Loss: 3.1349 - Acc: 0.6126
+Epoch 9/10 - Loss: 3.1848 - Acc: 0.6112
+Epoch 10/10 - Loss: 3.1545 - Acc: 0.6120
+Saved: results_resnet_cifar10/lambda_sweep/lambda_5000/model_task4.pt
+Computing Fisher for Environment 4...
+Computing Fisher Matrix...
+Fisher Matrix computed.
+
+============================================================
+Training Complete!
+============================================================
+[6/7] Evaluating λ=5000...
+/Users/sunilkumars/Desktop/EWC Project/drift_cl_edge/venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Using device: mps
+Evaluating on Environment 0...
+Environment 0 Accuracy: 0.3951
+Evaluating on Environment 1...
+Environment 1 Accuracy: 0.3951
+Evaluating on Environment 2...
+Environment 2 Accuracy: 0.3951
+Evaluating on Environment 3...
+Environment 3 Accuracy: 0.3951
+Evaluating on Environment 4...
+Environment 4 Accuracy: 0.3951
+
+============================================================
+Final Accuracies: ['0.3951', '0.3951', '0.3951', '0.3951', '0.3951']
+Average Accuracy: 0.3951
+Final Environment: 0.3951
+Early Environments Avg: 0.3951
+============================================================
+Results saved to results_resnet_cifar10/lambda_sweep/lambda_5000_results.json
+
+==========================================
+✓ ResNet-18 CIFAR-10 EXPERIMENTS COMPLETE!
+End time: Fri Jan 30 16:58:58 IST 2026
+==========================================
+
+Results saved to: results_resnet_cifar10/
+
