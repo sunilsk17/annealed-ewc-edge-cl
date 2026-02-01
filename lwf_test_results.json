@@ -1,0 +1,145 @@
+{
+  "average_incremental_accuracy": 0.08478297619047619,
+  "final_task_accuracy": 0.1065,
+  "early_tasks_average": 0.08236997354497355,
+  "forgetting": 0.9176300264550264,
+  "accuracies_per_task": [
+    0.068,
+    0.0635,
+    0.046,
+    0.0625,
+    0.0848,
+    0.09633333333333334,
+    0.10357142857142858,
+    0.096625,
+    0.12,
+    0.1065
+  ],
+  "task_details": [
+    {
+      "task_id": 0,
+      "num_seen_classes": 10,
+      "overall_accuracy": 0.068,
+      "per_task_accuracies": [
+        0.068
+      ]
+    },
+    {
+      "task_id": 1,
+      "num_seen_classes": 20,
+      "overall_accuracy": 0.0635,
+      "per_task_accuracies": [
+        0.005,
+        0.122
+      ]
+    },
+    {
+      "task_id": 2,
+      "num_seen_classes": 30,
+      "overall_accuracy": 0.046,
+      "per_task_accuracies": [
+        0.015,
+        0.069,
+        0.054
+      ]
+    },
+    {
+      "task_id": 3,
+      "num_seen_classes": 40,
+      "overall_accuracy": 0.0625,
+      "per_task_accuracies": [
+        0.044,
+        0.085,
+        0.059,
+        0.062
+      ]
+    },
+    {
+      "task_id": 4,
+      "num_seen_classes": 50,
+      "overall_accuracy": 0.0848,
+      "per_task_accuracies": [
+        0.044,
+        0.102,
+        0.132,
+        0.062,
+        0.084
+      ]
+    },
+    {
+      "task_id": 5,
+      "num_seen_classes": 60,
+      "overall_accuracy": 0.09633333333333334,
+      "per_task_accuracies": [
+        0.147,
+        0.102,
+        0.138,
+        0.109,
+        0.082,
+        0.0
+      ]
+    },
+    {
+      "task_id": 6,
+      "num_seen_classes": 70,
+      "overall_accuracy": 0.10357142857142858,
+      "per_task_accuracies": [
+        0.051,
+        0.032,
+        0.058,
+        0.038,
+        0.14,
+        0.161,
+        0.245
+      ]
+    },
+    {
+      "task_id": 7,
+      "num_seen_classes": 80,
+      "overall_accuracy": 0.096625,
+      "per_task_accuracies": [
+        0.01,
+        0.01,
+        0.01,
+        0.045,
+        0.136,
+        0.228,
+        0.18,
+        0.154
+      ]
+    },
+    {
+      "task_id": 8,
+      "num_seen_classes": 90,
+      "overall_accuracy": 0.12,
+      "per_task_accuracies": [
+        0.144,
+        0.001,
+        0.196,
+        0.074,
+        0.058,
+        0.161,
+        0.187,
+        0.114,
+        0.145
+      ]
+    },
+    {
+      "task_id": 9,
+      "num_seen_classes": 100,
+      "overall_accuracy": 0.1065,
+      "per_task_accuracies": [
+        0.023,
+        0.054,
+        0.139,
+        0.024,
+        0.006,
+        0.139,
+        0.129,
+        0.173,
+        0.226,
+        0.152
+      ]
+    }
+  ]
+}
