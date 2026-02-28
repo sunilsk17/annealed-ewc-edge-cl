@@ -1,0 +1,15 @@
+# Model checkpoints (push separately)
+checkpoints*/
+**/*.pt
+**/*.pth
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# System
+.DS_Store
+
+# Downloaded data (auto-downloaded by torchvision)
+data/
