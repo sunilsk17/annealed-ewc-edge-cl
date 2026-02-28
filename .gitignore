@@ -1,7 +1,5 @@
-# ResNet CIFAR-100 checkpoints - push separately (too many, 60 files × 47MB)
+# ResNet checkpoints for other experiments
 checkpoints_resnet*/
-results_resnet_cifar100/**/*.pt
-results_resnet_cifar100/**/*.pth
 
 # Python cache
 __pycache__/
