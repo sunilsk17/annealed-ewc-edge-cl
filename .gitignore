@@ -1,12 +1,7 @@
-# ResNet checkpoints - only push final task (model_task4.pt) for CIFAR-10
-# Full ResNet checkpoint sets are too large (~47MB each)
+# ResNet CIFAR-100 checkpoints - push separately (too many, 60 files × 47MB)
 checkpoints_resnet*/
-results_resnet*/**/*.pth
 results_resnet_cifar100/**/*.pt
-results_resnet_cifar10/**/model_task0.pt
-results_resnet_cifar10/**/model_task1.pt
-results_resnet_cifar10/**/model_task2.pt
-results_resnet_cifar10/**/model_task3.pt
+results_resnet_cifar100/**/*.pth
 
 # Python cache
 __pycache__/
