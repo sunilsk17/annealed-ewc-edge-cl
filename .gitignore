@@ -1,15 +1,12 @@
-# Model checkpoints (push separately)
-checkpoints*/
-**/*.pt
-**/*.pth
+# ResNet checkpoints (too large for GitHub ~47MB each)
+checkpoints_resnet*/
+results_resnet*/**/*.pt
+results_resnet*/**/*.pth
 
 # Python cache
 __pycache__/
 *.pyc
-*.pyo
-
-# System
 .DS_Store
 
-# Downloaded data (auto-downloaded by torchvision)
+# Downloaded data
 data/
